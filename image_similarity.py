@@ -4,8 +4,14 @@ import numpy as np
 import math
 import time
 from skimage import metrics
+import requests
 
-cap = cv2.VideoCapture(0)
+# Replace with the IP address of your ESP32-CAM
+ESP32_CAM_IP = ""
+
+STREAM_URL = f"http://{ESP32_CAM_IP}/stream"
+
+cap = cv2.VideoCapture(STREAM_URL)
 mpHands = mp.solutions.hands
 hands = mpHands.Hands()
 mpDraw = mp.solutions.drawing_utils
