@@ -2,7 +2,7 @@ import cv2
 import urllib.request
 import numpy as np
 
-cap = cv2.VideoCapture('http://192.168.100.55:81/stream')
+cap = cv2.VideoCapture('http://your_ip_address:81/stream')
 
 while True:
     if cap.isOpened():
