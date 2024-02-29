@@ -35,8 +35,8 @@
 // ===========================
 // Enter your WiFi credentials
 // ===========================
-const char* ssid = "Egon hotspot";
-const char* password = "ydie9940";
+const char* ssid = "**********";
+const char* password = "**********";
 
 void startCameraServer();
 void setupLedFlash(int pin);
